@@ -1,2 +1,84 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Sevillana&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Sevillana";
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #000;
+    background-image: url(../images/Background_Branco.jpg);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 95%;
+    background-color: #000000b9;
+    width: 100%;
+}
+
+main > p{
+    color: #fff;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+main > a{
+    height: 50px;
+    line-height: 10px;
+    text-decoration: none;
+    font-size: 2.5em;
+    color: #ff0;
+    background-color: #000;
+    padding: 10px 50px;
+    border: 1px solid #ff0;
+    border-radius: 15px;
+}
+
+.amarelo{color: #ff0;}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 8%;
+    text-align: center;
+    font-size: 1.1em;
+    background-color: #000;
+}
+
+footer a{
+    position: relative;
+    top: -10px;
+    text-decoration: none;
+    color: #ff0;
+    transition: color 1.3s;
+    animation: pulsar 1.5s infinite alternate-reverse
+    ease-in-out;
+}
+
+footer a:hover{
+    transition: color 1.3s;
+    color: #fff;
+}
+
+@keyframes pulsar{
+    from{
+        font-size: 1.1em;
+    }
+    to{
+        font-size: 1.2em;
+    }
+}
