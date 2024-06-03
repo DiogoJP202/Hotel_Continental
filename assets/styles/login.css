@@ -1,0 +1,172 @@
+*{
+    font-family: "Averia Serif Libre";
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    background-image: url(../images/Background_Branco.jpg);   
+}
+
+body::after{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000b9;
+    z-index: -1;
+}
+
+#question{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 2.5%;
+    top: 2.5%;
+    font-size: 2em;
+    background-color: #ff0;
+    border-radius: 50%;
+    border: 1px solid #000;
+    box-shadow: 0px 0px 5px #fff;
+    cursor: pointer;
+}
+
+#question span{
+    position: relative;
+    top: -18px;
+    left: 11px;
+    font-family: "Sevillana";
+}
+
+main{
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+}
+
+main > h1{
+    margin-bottom: 25px;
+    padding: 10px;
+    text-align: center;
+    color: #ff0;
+    background-color: #000;
+}
+
+main > form{
+    padding: 15px;
+}
+
+main > form > div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+main > form > div > label{
+    margin-bottom: 25px;
+    font-size: 1.25em;
+}
+
+main > form > div > input{
+    padding: 6px;
+    font-size: 1.1em;
+    border: 3px solid #000;
+    border-radius: 7px;
+}
+
+main > form > div > input:focus{ box-shadow: 0px 0px 5px #ff0; }
+
+main > form > input[type=submit]{
+    display: block;
+    font-size: 1.5em;
+    margin: auto;
+    padding: 10px 25px;
+    color: #ff0;
+    background-color: #000;
+    border: 0;
+    border-radius: 5px;
+}
+
+main > form > input[type=submit]:hover{
+    box-shadow: 0px 0px 5px #ff0;
+    cursor: pointer;
+}
+
+#cartao{
+    position: absolute;
+    width: 300px;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #888;
+    border-radius: 10px;
+    background-color: #000;
+    background-image: url(../images/FundoCard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+    transition: opacity 1s;
+}
+
+#cartao h2{
+    color: #ff0;
+    text-align: center;
+    background-color: #000;
+}
+
+#cartao > img{
+    display: block;
+    width: 80px;
+    margin: 10px auto;
+    background-color: #000;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 5px #ff0);
+    animation: rotate 4s infinite linear;
+}
+
+#cartao > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cartao > div > img{
+    width: 30px;
+}
+
+#cartao > div  p{
+    margin: 10px;
+    font-weight: bolder;
+    background-color: #000;
+}
+
+.tranparente{
+    transition: opacity 1s;
+    opacity: 0;
+    z-index: -1 !important;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotateY(0deg);
+    }
+
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+@media (min-width: 601px){
+    main{
+        border-radius: 21px;
+    }
+
+    main h1{
+        border-radius: 20px 20px 0 0;
+    }
+}

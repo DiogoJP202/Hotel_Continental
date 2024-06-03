@@ -1,13 +1,3 @@
-@charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Sevillana&display=swap');
-
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: "Sevillana";
-}
-
 body{
     display: flex;
     flex-direction: column;
@@ -46,14 +36,12 @@ main > a{
     border-radius: 15px;
 }
 
-.amarelo{color: #ff0;}
-
 footer{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 8%;
+    height: 5%;
     text-align: center;
     font-size: 1.1em;
     background-color: #000;
@@ -61,7 +49,7 @@ footer{
 
 footer a{
     position: relative;
-    top: -10px;
+    top: -6px;
     text-decoration: none;
     color: #ff0;
     transition: color 1.3s;
