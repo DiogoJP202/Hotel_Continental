@@ -1,3 +1,8 @@
+import {CriaQuartos} from "./component/CriaQuartos.js";
+
+localStorage.clear();
+localStorage.setItem("Quartos", JSON.stringify(CriaQuartos));
+
 const cardButton = document.querySelector("#question");
 
 cardButton.addEventListener("click", () =>{

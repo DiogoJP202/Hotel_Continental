@@ -6,16 +6,19 @@
     <meta name="author" content="Diogo Antonny Santos Soares">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Continental - Painel Inicial</title>
+    <title>Hotel Continental - Cadastro de hóspedes família</title>
     <link rel="stylesheet" href="../assets/styles/index.css">
-    <link rel="stylesheet" href="../assets/styles/PainelInicial.css">
+    <link rel="stylesheet" href="../assets/styles/operacoes.css">
     <link rel="stylesheet" href="../assets/styles/Nav&Menu.css">
     <link rel="shortcut icon" href="../assets/images/Icone.png" type="image/x-icon">
+    <style>
+
+    </style>
 </head>
 <body>
     <div id="menu" class="entrada">
+        <a href="./PainelInicial.html">Início</a>
         <a href="./diaria.html">Diária</a>
-        <a href="./cadastroHospedes.html">Cadastro de hóspedes família</a>
         <a href="#">Opção 1</a>
         <a href="#">Opção 1</a>
         <a href="#">Opção 1</a>
@@ -29,8 +32,8 @@
             <span class="line"></span>
         </div>
         <div class="links">
+            <a href="./PainelInicial.html">Início</a>
             <a href="./diaria.html">Diária</a>
-            <a href="./cadastroHospedes.html">Cadastro de hóspedes família</a>
             <a href="#">Opção 1</a>
             <a href="#">Opção 1</a>
             <a href="#">Opção 1</a>
@@ -39,13 +42,28 @@
         </div>
     </nav>
     <main>
-        <p>
-            Bem vindo ao <span class="amarelo">Hotel Continental</span>, <span class="name"></span>!
-            <br>
-            É um imenso prazer ter você por aqui!
-        </p>
-        <img src="../assets/images/logo1.png" alt="Logo do Hotel Continental.">
+        <h1>Cadastro de hóspedes família</h1>
+        <form>
+            <div id="users">
+                <div>
+                    <label for="IDiaria">Valor da hopedagem por pessoa:</label>
+                    <input type="number" name="Diaria" id="IDiaria" placeholder="R$0,00" min="1" required>
+                </div>
+                <div>
+                    <label for="INomeCliente1">Nome do hóspede 1:</label>
+                    <input type="text" name="NomeCliente" id="INomeCliente1" placeholder="Nome do hóspede" minlength="3" class="clientName" required min="3">
+
+                    <label for="IIdade1">Idade:</label>
+                    <input type="number" name="Idade" id="IIdade1" placeholder="Idade do hóspede" class="clientAge" required minlength="1">
+                </div>
+            </div>
+            
+            <div id="buttons">
+                <input type="button" value="Adicionar hóspede +">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>    
     </main>
-    <script type="module" src="../assets/js/painelInicial.js"></script>
+    <script src="../assets/js/cadastroHospedes.js" type="module"></script>
 </body>
 </html>
