@@ -19,8 +19,8 @@
     <div id="menu" class="entrada">
         <a href="./PainelInicial.html">Início</a>
         <a href="./diaria.html">Diária</a>
+        <a href="./cadastroHospedes.html">Cadastro de hóspedes</a>
         <a href="./cadastroHospedesFamilia.html">Cadastro de hóspedes família</a>    
-        <a href="./cadastroEventos.html">Eventos</a>
         <a href="#">Opção 1</a>
         <a href="#">Opção 1</a>
         <a class="sair">Sair</a>
@@ -34,8 +34,8 @@
         <div class="links">
             <a href="./PainelInicial.html">Início</a>
             <a href="./diaria.html">Diária</a>
+            <a href="./cadastroHospedes.html">Cadastro de hóspedes</a>
             <a href="./cadastroHospedesFamilia.html">Cadastro de hóspedes família</a>    
-            <a href="./cadastroEventos.html">Eventos</a>
             <a href="#">Opção 1</a>
             <a href="#">Opção 1</a>
             <a class="sair">Sair</a>
@@ -46,22 +46,40 @@
         <form>
             <div id="users">
                 <div>
-                    <label for="IDiaria">Valor da hopedagem por pessoa:</label>
-                    <input type="number" name="Diaria" id="IDiaria" placeholder="R$0,00" min="1" required>
+                    <label for="INomeEmpresa">Nome da empresa:</label>
+                    <input type="text" required minlength="3" placeholder="Amazon" id="INomeEmpresa">
                 </div>
                 <div>
-                    <label for="INomeCliente1">Nome do hóspede 1:</label>
-                    <input type="text" name="NomeCliente" id="INomeCliente1" placeholder="Nome do hóspede" minlength="3" class="clientName" required min="3">
+                    <label for="IConvidados">Número de convidados:</label>
+                    <input type="number" name="Convidados" id="IConvidados" placeholder="1" min="1" required>
+                </div>
+                <div>
+                    <label for="ISemana">Dia da semana:</label>
+                    <select name="Semana" id="ISemana">
+                        <option value="1">Segunda</option >
+                        <option value="2">Terça</option>
+                        <option value="3">Quarta</option>
+                        <option value="4">Quinta</option>
+                        <option value="5">Sexta</option>
+                        <option value="6">Sábado</option>
+                        <option value="7">Domingo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="IHorario">Horário: </label>
+                    <input type="time" name="Horario" id="IHorario" required>
+                </div>
+                <div>
+                    <label for="IDuracao">Duração do evento: </label>
+                    <input type="number" name="Duracao" id="IDuracao" required>
                 </div>
             </div>
             
             <div id="buttons">
-                <input type="button" value="Adicionar hóspede +">
-                <input type="button" class="searchButton" value="Pesquisar">
                 <input type="submit" value="Enviar">
             </div>
         </form>    
     </main>
-    <script src="../assets/js/cadastroHospedes.js" type="module"></script>
+    <script src="../assets/js/cadastroEventos.js" type="module"></script>
 </body>
 </html>
