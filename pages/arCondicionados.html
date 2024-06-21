@@ -51,18 +51,21 @@
                     <input type="number" required min="1" placeholder="R$ 0" step="0.01" id="IValorAparelho">
                 </div>
                 <div>
-                    <label for="IPorcentagemDesconto">Qual a porcentagem de desconto?</label>
-                    <input type="number" required min="1" max="100" placeholder="10%" id="IPorcentagemDesconto">
-                </div>
-                <div>
-                    <label for="IQuantidadeAparelhos">Qual o número mínimo de aparelhos para conseguir o desconto?</label>
+                    <label for="IQuantidadeAparelhos">Qual é a quantidade de aparelhos ?</label>
                     <input type="number" required min="1" placeholder="1" id="IQuantidadeAparelhos">
                 </div>
+                <div>
+                    <label for="IPorcentagemDesconto">Qual a porcentagem de desconto?</label>
+                    <input type="number" required min="0" max="100" placeholder="10%" id="IPorcentagemDesconto">
+                </div>
+                <div>
+                    <label for="IQuantidadeDescontoPorAparelhos">Qual o número mínimo de aparelhos para conseguir o desconto?</label>
+                    <input type="number" required min="1" placeholder="1" id="IQuantidadeDescontoPorAparelhos">
+                </div>
             </div>
-
-            <!-- O serviço de Empresa 1 custará R$ 1350.0 Programa pergunta => Deseja informar novos dados, {Nome}? S/N -->
             
             <div id="buttons">
+                <input type="button" id="check" value="Checar valores">
                 <input type="submit" value="Enviar">
             </div>
         </form>    
